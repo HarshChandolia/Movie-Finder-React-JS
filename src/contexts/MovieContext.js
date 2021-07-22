@@ -17,7 +17,7 @@ const MovieContextProvider = (props) => {
     setShowResults(false);
 
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=${api_key}&t=${title}`
+      `https://www.omdbapi.com/?apikey=${api_key}&t=${title}`
     );
     const resData = await res.json();
     setData(resData);

@@ -9,8 +9,8 @@ const SearchResults = () => {
 
   if (Ratings) {
     Ratings.map((rating) => {
-      ratingsOutput += `${rating.Source}: ${rating.Value}
-`;
+      return (ratingsOutput += `${rating.Source}: ${rating.Value}
+`);
     });
   }
 
